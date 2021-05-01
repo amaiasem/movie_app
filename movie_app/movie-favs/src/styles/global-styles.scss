@@ -27,18 +27,10 @@ $text-font:'Roboto', sans-serif;
     align-items: $align;
 }
 
-@mixin text($size, $color, $weight) {
+@mixin text($size, $weight) {
     font-family: $text-font;
     font-size: $size;
-    color: $color;
     font-weight: $weight;
-}
-
-//Card background and text color
-
-@mixin card-background ($background, $color){
-    background-color: $background;
-    color: $color;
 }
 
 @mixin shadowInset(){
