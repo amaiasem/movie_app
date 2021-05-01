@@ -1,0 +1,27 @@
+@import './../../styles/global-styles.scss';
+
+.container__list{   
+    width: 100vw;
+    margin: 10px 5px 50px 5px;
+    @include display(row, 'center', 'flex-start');
+    flex-wrap: wrap;
+
+    .movie-card{
+        margin: 5px;
+        width: 180px;
+        height: 300px;
+
+        img{
+            width: 180px;
+            height: 250px;
+            border-radius: 5px;
+        }
+
+        p{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 150px;
+        }
+    }
+}

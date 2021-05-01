@@ -1,11 +1,28 @@
 import './App.scss';
 import React from 'react';
+import { Provider } from 'react-redux';
+import {
+  BrowserRouter,
+  Link,
+  Route,
+  Switch
+} from 'react-router-dom';
+import MovieList from './components/MovieList';
+import store from './redux/stores/configureStore';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hi this is your favourites movie app</h1>
-    </div>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" exact component={MovieList} />
+          <Route>
+            <h2>404. Page not found.</h2>
+            <Link to="/">Home</Link>
+          </Route>
+        </Switch>
+      </BrowserRouter>
+    </Provider>
   );
 }
 
