@@ -7,13 +7,17 @@ $lightGrey: #999999;
 $darkGrey: #383838;
 $darkBlue: #032541;
 $lightBlue: #9be2f4;
-$red: #e92207;
-$green: #00911f;
+$red: #f5593a;
+$green: #26c286;
 $lightGreen: #66c6b4;
 
 @mixin gradient(){
     background: rgb(102,198,180);
     background: linear-gradient(90deg, rgba(102,198,180,1) 0%, rgba(8,180,225,1) 61%);
+}
+@mixin gradientHover(){
+    background: rgb(102,198,180);
+    background: linear-gradient(90deg, rgba(102,198,180,1) 80%, rgba(8,180,225,1) 100%);
 }
 
 //Text

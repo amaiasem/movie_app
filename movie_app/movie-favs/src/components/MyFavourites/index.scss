@@ -21,9 +21,15 @@
             cursor: pointer;
             margin-right: 5px;
             padding: 5px 10px;
+            color: $white;
             border-radius: 5px;
+            @include text(16px, 700);
             @include gradient();
 
+            &:hover{
+                transition: 0.3s;
+                @include gradientHover();
+            }
         }
     }
 

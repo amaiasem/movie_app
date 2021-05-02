@@ -22,9 +22,9 @@ export function loadFavourites() {
 }
 
 export function addFavourites(movie) {
-  const favpouriteMovie = { ...movie, watched: false };
+  const favouriteMovie = { ...movie, watched: false };
   return async (dispatch) => {
-    const { data } = await axios.post('http://localhost:3000/favourites', favpouriteMovie);
+    const { data } = await axios.post('http://localhost:3000/favourites', favouriteMovie);
     dispatch({
       type: movieActionTypes.ADD_FAVOURITES,
       data
