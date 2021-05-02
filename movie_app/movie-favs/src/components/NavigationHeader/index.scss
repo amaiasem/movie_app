@@ -6,7 +6,7 @@ nav{
     top: 0;
     width: 100vw;
     height: 50px;
-    @include display(row, flex-start, center);
+    @include display(row, space-between, center);
     padding: 5px 10px;
     background-color: $darkBlue;
     color: $white;
@@ -19,14 +19,9 @@ nav{
         }
     }
 
-    div{
-        @include display(row, flex-start, center);
-        margin-left: 20px;
-
-        .favourites--go,
-        button{
+        .favourites--go{
             all: unset;
-            margin-left: 10px;
+            margin-right: 50px;
             text-decoration: none;
             cursor: pointer;
             color: $white;
@@ -37,5 +32,5 @@ nav{
             }
         }
 
-    }
+
 }

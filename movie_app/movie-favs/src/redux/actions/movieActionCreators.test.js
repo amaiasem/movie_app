@@ -9,7 +9,6 @@ loadAllmovies,
   updateFavourites,
   filterFavourites
 } from './movieActionCreators';
-// import mockedData from '../../constants/mockedData';
 
 jest.mock('axios');
 

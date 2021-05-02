@@ -2,8 +2,6 @@
 import movieActionTypes from '../actions/movieActionTypes';
 
 export default function moviesReducer(state = {}, action) {
-  // eslint-disable-next-line no-debugger
-  debugger;
   switch (action.type) {
     case movieActionTypes.LOAD_ALL_MOVIES:
       return { ...state, allMovies: action.data.results };
@@ -19,7 +17,7 @@ export default function moviesReducer(state = {}, action) {
     case movieActionTypes.UPDATE_FAVOURITES:
       return {
         ...state,
-        favourites: state.favourites.map((movie) => ((movie.id === action.data) ? action.data : movie))
+        favourites: state.favourites.map((movie) => ((movie.id === action.data.id) ? action.data : movie))
       };
     case movieActionTypes.FILTER_FAVOURITES:
       return {

@@ -451,29 +451,7 @@
       ],
       "popularity": 2516.939,
       "media_type": "movie",
-      "watched": true
-    },
-    {
-      "video": false,
-      "vote_average": 6.2,
-      "overview": "A three-person crew on a mission to Mars faces an impossible choice when an unplanned passenger jeopardizes the lives of everyone on board.",
-      "release_date": "2021-04-22",
-      "adult": false,
-      "backdrop_path": "/lLUTG4e3asScennW3qryoXjG48Q.jpg",
-      "vote_count": 339,
-      "genre_ids": [
-        18,
-        878,
-        53
-      ],
-      "id": 559581,
-      "original_language": "en",
-      "original_title": "Stowaway",
-      "poster_path": "/yOscLK7KzEPDdi1P8RmevGIjOSp.jpg",
-      "title": "Stowaway",
-      "popularity": 753.667,
-      "media_type": "movie",
-      "watched": true
+      "watched": false
     },
     {
       "poster_path": "/6KErczPBROQty7QoIsaa6wJYXZi.jpg",
@@ -498,23 +476,111 @@
       "watched": false
     },
     {
-      "title": "The Father",
-      "adult": false,
-      "backdrop_path": "/h3weAFgg06GqchI2xDfufBgSFTj.jpg",
-      "id": 600354,
       "original_language": "en",
-      "original_title": "The Father",
-      "poster_path": "/uxWXW1YYQENSv7OzHB4Hds0bK3b.jpg",
+      "original_title": "Nomadland",
+      "poster_path": "/66GUmWpTHgAjyp4aBSXy63PZTiC.jpg",
       "video": false,
-      "vote_average": 8.3,
-      "vote_count": 562,
-      "overview": "A man refuses all assistance from his daughter as he ages and, as he tries to make sense of his changing circumstances, he begins to doubt his loved ones, his own mind and even the fabric of his reality.",
-      "release_date": "2020-12-23",
+      "vote_average": 7.4,
+      "id": 581734,
+      "release_date": "2021-01-29",
+      "vote_count": 760,
+      "title": "Nomadland",
+      "adult": false,
+      "backdrop_path": "/bjjZXrP8PEdFeJkKERc62xlarMI.jpg",
+      "overview": "A woman in her sixties embarks on a journey through the western United States after losing everything in the Great Recession, living as a van-dwelling modern-day nomad.",
       "genre_ids": [
-        18
+        18,
+        37
       ],
-      "popularity": 186.408,
+      "popularity": 397.321,
       "media_type": "movie",
+      "watched": true
+    },
+    {
+      "title": "The Marksman",
+      "adult": false,
+      "backdrop_path": "/5Zv5KmgZzdIvXz2KC3n0MyecSNL.jpg",
+      "id": 634528,
+      "original_language": "en",
+      "original_title": "The Marksman",
+      "poster_path": "/6vcDalR50RWa309vBH1NLmG2rjQ.jpg",
+      "video": false,
+      "vote_average": 7.5,
+      "vote_count": 310,
+      "overview": "Jim Hanson’s quiet life is suddenly disturbed by two people crossing the US/Mexico border – a woman and her young son – desperate to flee a Mexican cartel. After a shootout leaves the mother dead, Jim becomes the boy’s reluctant defender. He embraces his role as Miguel’s protector and will stop at nothing to get him to safety, as they go on the run from the relentless assassins.",
+      "release_date": "2021-01-15",
+      "genre_ids": [
+        28,
+        53,
+        80
+      ],
+      "popularity": 2176.957,
+      "media_type": "movie",
+      "watched": true
+    },
+    {
+      "overview": "Cold War spy Greville Wynne and his Russian source try to put an end to the Cuban Missile Crisis.",
+      "release_date": "2020-09-27",
+      "title": "The Courier",
+      "id": 522241,
+      "adult": false,
+      "backdrop_path": "/3pIqd1hgZ2xqzWEyiYp4blqE9Fi.jpg",
+      "genre_ids": [
+        18,
+        53
+      ],
+      "original_language": "en",
+      "original_title": "The Courier",
+      "poster_path": "/zFIjKtZrzhmc7HecdFXXjsLR2Ig.jpg",
+      "vote_count": 54,
+      "video": false,
+      "vote_average": 6.7,
+      "popularity": 64.777,
+      "media_type": "movie",
+      "watched": true
+    },
+    {
+      "title": "Zack Snyder's Justice League",
+      "adult": false,
+      "backdrop_path": "/pcDc2WJAYGJTTvRSEIpRZwM3Ola.jpg",
+      "id": 791373,
+      "original_language": "en",
+      "original_title": "Zack Snyder's Justice League",
+      "poster_path": "/tnAuB8q5vv7Ax9UAEje5Xi4BXik.jpg",
+      "video": false,
+      "vote_average": 8.5,
+      "vote_count": 5250,
+      "overview": "Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.",
+      "release_date": "2021-03-18",
+      "genre_ids": [
+        28,
+        12,
+        14,
+        878
+      ],
+      "popularity": 2176.988,
+      "media_type": "movie",
+      "watched": false
+    },
+    {
+      "origin_country": [
+        "US"
+      ],
+      "overview": "In a world cleaved in two by a massive barrier of perpetual darkness, a young soldier uncovers a power that might finally unite her country. But as she struggles to hone her power, dangerous forces plot against her. Thugs, thieves, assassins and saints are at war now, and it will take more than magic to survive.",
+      "vote_count": 215,
+      "backdrop_path": "/8z9qQkx7wA6FXpLV8Tiw9mfsRFK.jpg",
+      "vote_average": 8.4,
+      "genre_ids": [
+        10765
+      ],
+      "name": "Shadow and Bone",
+      "id": 85720,
+      "first_air_date": "2021-04-23",
+      "poster_path": "/mrVoyDFiDSqfH4mkoRtccOv2vwh.jpg",
+      "original_language": "en",
+      "original_name": "Shadow and Bone",
+      "popularity": 278.907,
+      "media_type": "tv",
       "watched": false
     }
   ]

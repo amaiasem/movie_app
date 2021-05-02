@@ -51,6 +51,7 @@
                 @include display(column, space-between, center);
 
                 .movie__tile{
+                    margin-left: 5px;
                     text-overflow: ellipsis;
                     white-space: nowrap;
                     overflow: hidden;
