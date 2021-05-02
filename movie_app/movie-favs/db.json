@@ -432,26 +432,66 @@
   ],
   "favourites": [
     {
-      "overview": "Washed-up MMA fighter Cole Young, unaware of his heritage, and hunted by Emperor Shang Tsung's best warrior, Sub-Zero, seeks out and trains with Earth's greatest champions as he prepares to stand against the enemies of Outworld in a high stakes battle for the universe.",
-      "release_date": "2021-04-07",
+      "poster_path": "/pgqgaUx1cJb5oZQQ5v0tNARCeBp.jpg",
+      "video": false,
+      "vote_average": 8.2,
+      "overview": "In a time when monsters walk the Earth, humanity’s fight for its future sets Godzilla and Kong on a collision course that will see the two most powerful forces of nature on the planet collide in a spectacular battle for the ages.",
+      "release_date": "2021-03-24",
+      "id": 399566,
       "adult": false,
-      "backdrop_path": "/9yBVqNruk6Ykrwc32qrK2TIE5xw.jpg",
-      "vote_count": 1882,
+      "backdrop_path": "/inJjDhCjfhh3RtrJWBmmDqeuSYC.jpg",
+      "title": "Godzilla vs. Kong",
       "genre_ids": [
-        14,
-        28,
-        12,
         878,
+        28,
+        18
+      ],
+      "vote_count": 5146,
+      "original_language": "en",
+      "original_title": "Godzilla vs. Kong",
+      "popularity": 3593.413,
+      "media_type": "movie"
+    },
+    {
+      "title": "Nomadland",
+      "adult": false,
+      "backdrop_path": "/bjjZXrP8PEdFeJkKERc62xlarMI.jpg",
+      "id": 581734,
+      "original_language": "en",
+      "original_title": "Nomadland",
+      "poster_path": "/66GUmWpTHgAjyp4aBSXy63PZTiC.jpg",
+      "video": false,
+      "vote_average": 7.4,
+      "vote_count": 760,
+      "overview": "A woman in her sixties embarks on a journey through the western United States after losing everything in the Great Recession, living as a van-dwelling modern-day nomad.",
+      "release_date": "2021-01-29",
+      "genre_ids": [
+        18,
+        37
+      ],
+      "popularity": 397.321,
+      "media_type": "movie"
+    },
+    {
+      "vote_average": 5.9,
+      "overview": "Catherine Clare reluctantly trades life in 1980 Manhattan for a remote home in the tiny hamlet of Chosen, New York, after her husband George lands a job teaching art history at a small Hudson Valley college. Even as she does her best to transform the old dairy farm into a place where young daughter Franny will be happy, Catherine increasingly finds herself isolated and alone. She soon comes to sense a sinister darkness lurking both in the walls of the ramshackle property—and in her marriage to George.",
+      "release_date": "2021-04-29",
+      "adult": false,
+      "backdrop_path": "/owOBJlzH3j3YHUbr3XqSH10CWzo.jpg",
+      "vote_count": 95,
+      "genre_ids": [
+        27,
+        9648,
+        18,
         53
       ],
-      "original_title": "Mortal Kombat",
+      "id": 631060,
       "original_language": "en",
-      "id": 460465,
-      "poster_path": "/6Wdl9N6dL0Hi0T1qJLWSz6gMLbd.jpg",
-      "title": "Mortal Kombat",
+      "original_title": "Things Heard & Seen",
+      "poster_path": "/9tSkNmGt1K5Lgf0L0BTHHYJNz0W.jpg",
+      "title": "Things Heard & Seen",
       "video": false,
-      "vote_average": 7.9,
-      "popularity": 7612.95,
+      "popularity": 136.739,
       "media_type": "movie"
     }
   ]

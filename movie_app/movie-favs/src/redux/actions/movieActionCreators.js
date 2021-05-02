@@ -12,13 +12,31 @@ export default function loadAllmovies() {
 }
 
 export function loadFavourites() {
-  // eslint-disable-next-line no-debugger
-  debugger;
   return async (dispatch) => {
     const { data } = await axios.get('http://localhost:3000/favourites');
     dispatch({
       type: movieActionTypes.LOAD_ALL_FAVOURITES,
       data
+    });
+  };
+}
+
+export function addFavourites(movie) {
+  return async (dispatch) => {
+    const { data } = await axios.post('http://localhost:3000/favourites', movie);
+    dispatch({
+      type: movieActionTypes.ADD_FAVOURITES,
+      data
+    });
+  };
+}
+
+export function deleteFavourites(movieID) {
+  return async (dispatch) => {
+    await axios.delete(`http://localhost:3000/favourites/${movieID}`);
+    dispatch({
+      type: movieActionTypes.DELETE_FAVOURITES,
+      data: movieID
     });
   };
 }

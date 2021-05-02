@@ -1,11 +1,14 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { PropTypes } from 'prop-types';
+import { bindActionCreators } from 'redux';
 import posterSize from '../../constants/posterURL';
 import NavigationHeader from '../NavigationHeader';
+import { addFavourites } from '../../redux/actions/movieActionCreators';
 
 import './index.scss';
 
-const MovieDetail = ({ location }) => {
+const MovieDetail = ({ location, action }) => {
   const movie = location.props;
   return (
     <div>
@@ -21,7 +24,11 @@ const MovieDetail = ({ location }) => {
               : <h1>{movie.name}</h1>
 
           }
-            <button className="favourites--add" type="button">
+            <button
+              className="favourites--add"
+              type="button"
+              onClick={() => action.addFavourites(movie)}
+            >
               <i className="far fa-heart" />
             </button>
           </div>
@@ -56,7 +63,21 @@ MovieDetail.propTypes = {
       media_type: PropTypes.string,
       vote_average: PropTypes.string
     }).isRequired
+  }).isRequired,
+  action: PropTypes.shape({
+    addFavourites: PropTypes.func.isRequired
   }).isRequired
 };
 
-export default MovieDetail;
+function mapStateToProps({ movies }) {
+  return {
+    favourites: movies.favourites
+  };
+}
+
+function mapDisptachToProps(dispatch) {
+  return {
+    action: bindActionCreators({ addFavourites }, dispatch)
+  };
+}
+export default connect(mapStateToProps, mapDisptachToProps)(MovieDetail);
