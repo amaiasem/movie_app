@@ -8,6 +8,7 @@ import {
   Switch
 } from 'react-router-dom';
 import MovieList from './components/MovieList';
+import MovieDetail from './components/MovieDetail';
 import store from './redux/stores/configureStore';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route path="/" exact component={MovieList} />
+          <Route path="/movie-detail" component={MovieDetail} />
           <Route>
             <h2>404. Page not found.</h2>
             <Link to="/">Home</Link>

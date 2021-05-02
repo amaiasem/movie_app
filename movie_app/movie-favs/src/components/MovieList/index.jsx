@@ -13,15 +13,18 @@ function MovieList({ movies, action }) {
   }, []);
 
   return (
-    <section className="movies__container">
+    <div className="movies__container">
       <h2>Trending this week</h2>
       <div className="container__list">
         {
         movies && movies.map((movie) => (
           <Link
-            href="/movie-detail"
+            to={{
+              pathname: '/movie-detail',
+              props: movie
+            }}
             className="movie__card"
-            params={{ movie }}
+            params={movie}
           >
             <img src={`${posterSize.small}${movie.poster_path}`} alt={`Poster from ${movie.title}`} />
             <div className="movie__info">
@@ -43,7 +46,7 @@ function MovieList({ movies, action }) {
         ))
       }
       </div>
-    </section>
+    </div>
   );
 }
 
