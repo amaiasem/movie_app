@@ -2,7 +2,7 @@ const initialState = {
   movies: {
 
     allMovies: [],
-    likes: [],
+    favourites: [],
     filteredMovies: []
   }
 

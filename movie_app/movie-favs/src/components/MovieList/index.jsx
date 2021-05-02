@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { PropTypes } from 'prop-types';
 import loadMovies from '../../redux/actions/movieActionCreators';
 import posterSize from '../../constants/posterURL';
+import NavigationHeader from '../NavigationHeader';
 import './index.scss';
 
 function MovieList({ movies, action }) {
@@ -14,6 +15,7 @@ function MovieList({ movies, action }) {
 
   return (
     <div className="movies__container">
+      <NavigationHeader />
       <h2>Trending this week</h2>
       <div className="container__list">
         {

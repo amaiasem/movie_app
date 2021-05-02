@@ -10,3 +10,15 @@ export default function loadAllmovies() {
     });
   };
 }
+
+export function loadFavourites() {
+  // eslint-disable-next-line no-debugger
+  debugger;
+  return async (dispatch) => {
+    const { data } = await axios.get('http://localhost:3000/favourites');
+    dispatch({
+      type: movieActionTypes.LOAD_ALL_FAVOURITES,
+      data
+    });
+  };
+}
