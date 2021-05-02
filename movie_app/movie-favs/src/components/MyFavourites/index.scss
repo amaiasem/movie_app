@@ -12,6 +12,21 @@
         color: $white;
     }
 
+    .favourites__filter{
+        margin-left: 50px;
+        margin-top: 20px;
+        
+        button{
+            all: unset;
+            cursor: pointer;
+            margin-right: 5px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            @include gradient();
+
+        }
+    }
+
     .favourites__list{
         padding: 20px; 
         width: 95%;
@@ -20,22 +35,73 @@
 
         .movie__card{
             margin: 5px;
+            padding: 5px;
             width: 160px;
             height: 270px;
             background-color: $white;
             color: $black;
             border-radius: 5px;
-            @include display(column, flex-start, center);
+            @include display(column, space-between, center);
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.644);
+            position: relative;
 
-            .movie--delete{
-                all: unset;
-                cursor: pointer;
-                align-self: flex-end;
-                margin: 2px 2px 0 0;
+            div{
+                @include display(row, space-between, center);
+               width: 90%;
 
-                i{
-                    font-size: 16px;
+                h4{
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    width: 150px;
+                    @include text(15px, 500); 
+                }
+
+                .movie__menu{
+                    all: unset;
+                    cursor: pointer;
+                    width: 50px;
+                    text-align: end;
+                }
+
+                .movie__menu:hover + .movie__dropdown{
+                    transform: scaleY(1);
+                }
+               
+                .movie__dropdown{
+                    position: absolute;
+                    top: 25px;
+                    right: 0;
+                    z-index: 1;
+                    width: 100px;
+                    height: 60px;
+                    background-color: $white;
+                    border-radius: 5px;
+                    @include display(column, space-between, flex-start);
+                    transform: scaleY(0);
+                    transform-origin: top;
+                    transition: 0.5s;
+
+                    &:hover{
+                        transform: scale(1);
+                    }
+
+                    li{
+                        width: 100%;
+
+                        button{
+                            all: unset;
+                            cursor: pointer;
+                            @include text(15px, 400);
+                            width: 100%;
+                            padding: 5px;
+
+                            &:hover{
+                                color: $white;
+                                background-color: $darkBlue;
+                            }
+                        }
+                    }
                 }
             }
 
@@ -46,14 +112,17 @@
                 object-fit: cover;
             }
 
-            h4{
-                text-overflow: ellipsis;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    width: 150px;
-                    @include text(15px, 500); 
+            .watched,
+            .pending{
+                @include text(15px, 700);
             }
 
+            .watched{
+                color: $green;
+            }
+            .pending{
+                color: $red;
+            }
         }
     }
 }

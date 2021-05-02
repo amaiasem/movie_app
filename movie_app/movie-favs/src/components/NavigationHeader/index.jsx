@@ -6,13 +6,13 @@ import './index.scss';
 function NavigationHeader() {
   return (
     <nav>
-      <Link to="/">
+      <Link className="home--go" to="/">
         <img src={logo} alt="Logo TMDB" />
       </Link>
       <div>
         <button type="button">Movies</button>
         <button type="button">TV SHows</button>
-        <Link to="/my-favourites">My Favourites</Link>
+        <Link className="favourites--go" to="/my-favourites">My Favourites</Link>
       </div>
     </nav>
   );

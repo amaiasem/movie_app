@@ -22,8 +22,9 @@ export function loadFavourites() {
 }
 
 export function addFavourites(movie) {
+  const favpouriteMovie = { ...movie, watched: false };
   return async (dispatch) => {
-    const { data } = await axios.post('http://localhost:3000/favourites', movie);
+    const { data } = await axios.post('http://localhost:3000/favourites', favpouriteMovie);
     dispatch({
       type: movieActionTypes.ADD_FAVOURITES,
       data
@@ -38,5 +39,24 @@ export function deleteFavourites(movieID) {
       type: movieActionTypes.DELETE_FAVOURITES,
       data: movieID
     });
+  };
+}
+
+export function updateFavourites(movieID, watched) {
+  const updateMovie = { watched: !watched };
+  return async (dispatch) => {
+    const { data } = await axios.patch(`http://localhost:3000/favourites/${movieID}`, updateMovie);
+
+    dispatch({
+      type: movieActionTypes.UPDATE_FAVOURITES,
+      data
+    });
+  };
+}
+
+export function filterFavourites(watched) {
+  return {
+    type: movieActionTypes.FILTER_FAVOURITES,
+    data: watched
   };
 }

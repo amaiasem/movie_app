@@ -432,67 +432,136 @@
   ],
   "favourites": [
     {
-      "poster_path": "/pgqgaUx1cJb5oZQQ5v0tNARCeBp.jpg",
+      "original_language": "en",
+      "original_title": "Nobody",
+      "poster_path": "/oBgWY00bEFeZ9N25wWVyuQddbAo.jpg",
       "video": false,
-      "vote_average": 8.2,
-      "overview": "In a time when monsters walk the Earth, humanity’s fight for its future sets Godzilla and Kong on a collision course that will see the two most powerful forces of nature on the planet collide in a spectacular battle for the ages.",
-      "release_date": "2021-03-24",
-      "id": 399566,
+      "vote_average": 8.5,
+      "id": 615457,
+      "release_date": "2021-03-18",
+      "vote_count": 1015,
+      "title": "Nobody",
       "adult": false,
-      "backdrop_path": "/inJjDhCjfhh3RtrJWBmmDqeuSYC.jpg",
-      "title": "Godzilla vs. Kong",
+      "backdrop_path": "/6zbKgwgaaCyyBXE4Sun4oWQfQmi.jpg",
+      "overview": "Hutch Mansell, a suburban dad, overlooked husband, nothing neighbor — a \"nobody.\" When two thieves break into his home one night, Hutch's unknown long-simmering rage is ignited and propels him on a brutal path that will uncover dark secrets he fought to leave behind.",
       "genre_ids": [
-        878,
         28,
-        18
+        53,
+        80
       ],
-      "vote_count": 5146,
-      "original_language": "en",
-      "original_title": "Godzilla vs. Kong",
-      "popularity": 3593.413,
-      "media_type": "movie"
+      "popularity": 2516.939,
+      "media_type": "movie",
+      "watched": true
     },
     {
-      "title": "Nomadland",
-      "adult": false,
-      "backdrop_path": "/bjjZXrP8PEdFeJkKERc62xlarMI.jpg",
-      "id": 581734,
+      "original_name": "The Falcon and the Winter Soldier",
+      "first_air_date": "2021-03-19",
+      "id": 88396,
+      "overview": "Following the events of “Avengers: Endgame”, the Falcon, Sam Wilson and the Winter Soldier, Bucky Barnes team up in a global adventure that tests their abilities, and their patience.",
+      "vote_count": 5132,
+      "vote_average": 7.9,
+      "poster_path": "/6kbAMLteGO8yyewYau6bJ683sw7.jpg",
+      "backdrop_path": "/b0WmHGc8LHTdGCVzxRb3IBMur57.jpg",
+      "name": "The Falcon and the Winter Soldier",
+      "genre_ids": [
+        10765,
+        10759,
+        18,
+        10768
+      ],
+      "origin_country": [
+        "US"
+      ],
       "original_language": "en",
-      "original_title": "Nomadland",
-      "poster_path": "/66GUmWpTHgAjyp4aBSXy63PZTiC.jpg",
+      "popularity": 2965.392,
+      "media_type": "tv",
+      "watched": false
+    },
+    {
       "video": false,
-      "vote_average": 7.4,
-      "vote_count": 760,
-      "overview": "A woman in her sixties embarks on a journey through the western United States after losing everything in the Great Recession, living as a van-dwelling modern-day nomad.",
-      "release_date": "2021-01-29",
-      "genre_ids": [
-        18,
-        37
-      ],
-      "popularity": 397.321,
-      "media_type": "movie"
-    },
-    {
-      "vote_average": 5.9,
-      "overview": "Catherine Clare reluctantly trades life in 1980 Manhattan for a remote home in the tiny hamlet of Chosen, New York, after her husband George lands a job teaching art history at a small Hudson Valley college. Even as she does her best to transform the old dairy farm into a place where young daughter Franny will be happy, Catherine increasingly finds herself isolated and alone. She soon comes to sense a sinister darkness lurking both in the walls of the ramshackle property—and in her marriage to George.",
-      "release_date": "2021-04-29",
+      "vote_average": 6.2,
+      "overview": "A three-person crew on a mission to Mars faces an impossible choice when an unplanned passenger jeopardizes the lives of everyone on board.",
+      "release_date": "2021-04-22",
       "adult": false,
-      "backdrop_path": "/owOBJlzH3j3YHUbr3XqSH10CWzo.jpg",
-      "vote_count": 95,
+      "backdrop_path": "/lLUTG4e3asScennW3qryoXjG48Q.jpg",
+      "vote_count": 339,
       "genre_ids": [
-        27,
-        9648,
         18,
+        878,
         53
       ],
-      "id": 631060,
+      "id": 559581,
       "original_language": "en",
-      "original_title": "Things Heard & Seen",
-      "poster_path": "/9tSkNmGt1K5Lgf0L0BTHHYJNz0W.jpg",
-      "title": "Things Heard & Seen",
+      "original_title": "Stowaway",
+      "poster_path": "/yOscLK7KzEPDdi1P8RmevGIjOSp.jpg",
+      "title": "Stowaway",
+      "popularity": 753.667,
+      "media_type": "movie",
+      "watched": false
+    },
+    {
+      "poster_path": "/6KErczPBROQty7QoIsaa6wJYXZi.jpg",
       "video": false,
-      "popularity": 136.739,
-      "media_type": "movie"
+      "vote_average": 7.3,
+      "overview": "Tom the cat and Jerry the mouse get kicked out of their home and relocate to a fancy New York hotel, where a scrappy employee named Kayla will lose her job if she can’t evict Jerry before a high-class wedding at the hotel. Her solution? Hiring Tom to get rid of the pesky mouse.",
+      "release_date": "2021-02-11",
+      "id": 587807,
+      "adult": false,
+      "backdrop_path": "/9ns9463dwOeo1CK1JU2wirL5Yi1.jpg",
+      "title": "Tom & Jerry",
+      "genre_ids": [
+        35,
+        10751,
+        16
+      ],
+      "vote_count": 1274,
+      "original_language": "en",
+      "original_title": "Tom & Jerry",
+      "popularity": 1050.532,
+      "media_type": "movie",
+      "watched": true
+    },
+    {
+      "title": "The Father",
+      "adult": false,
+      "backdrop_path": "/h3weAFgg06GqchI2xDfufBgSFTj.jpg",
+      "id": 600354,
+      "original_language": "en",
+      "original_title": "The Father",
+      "poster_path": "/uxWXW1YYQENSv7OzHB4Hds0bK3b.jpg",
+      "video": false,
+      "vote_average": 8.3,
+      "vote_count": 562,
+      "overview": "A man refuses all assistance from his daughter as he ages and, as he tries to make sense of his changing circumstances, he begins to doubt his loved ones, his own mind and even the fabric of his reality.",
+      "release_date": "2020-12-23",
+      "genre_ids": [
+        18
+      ],
+      "popularity": 186.408,
+      "media_type": "movie",
+      "watched": false
+    },
+    {
+      "poster_path": "/vXHzO26mJaOt4VO7ZFiM6No5ScT.jpg",
+      "video": false,
+      "vote_average": 6.7,
+      "overview": "A lonesome stranger with nerves of steel must track down and kill a rogue hitman to satisfy an outstanding debt. But the only information he's been given is a time and location where to find his quarry. No name. No description. Nothing.",
+      "release_date": "2021-04-30",
+      "id": 808023,
+      "adult": false,
+      "backdrop_path": "/3Ef8PWUiP1ehO1ESEroxb736srR.jpg",
+      "title": "The Virtuoso",
+      "genre_ids": [
+        53,
+        28,
+        80
+      ],
+      "vote_count": 13,
+      "original_language": "en",
+      "original_title": "The Virtuoso",
+      "popularity": 142.739,
+      "media_type": "movie",
+      "watched": true
     }
   ]
 }

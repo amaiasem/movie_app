@@ -34,7 +34,7 @@ const MovieDetail = ({ location, action }) => {
           </div>
           <div className="movie-info">
             <img src={`${posterSize.big}${movie.poster_path}`} alt={`Cover from ${movie.title}`} />
-            <div>
+            <div className="movie__description">
               <h3 className="info__title">Overview</h3>
               <p className="info__description">{movie.overview}</p>
               <h3 className="info__title">Released</h3>
