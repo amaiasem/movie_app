@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { PropTypes } from 'prop-types';
 import { bindActionCreators } from 'redux';
+import { Link } from 'react-router-dom';
 import {
   loadFavourites,
   deleteFavourites,
@@ -87,7 +88,13 @@ function MyFavourites({ favourites, action }) {
                     }
                   </ul>
                 </div>
-                <img src={`${posterSize.small}${movie.poster_path}`} alt={`Poster from ${movie.title}`} />
+                <Link to={{
+                  pathname: '/movie-detail',
+                  props: movie
+                }}
+                >
+                  <img src={`${posterSize.small}${movie.poster_path}`} alt={`Poster from ${movie.title}`} />
+                </Link>
                 {
                   movie.watched
                     ? <p className="watched">Watched</p>

@@ -6,10 +6,15 @@ import './index.scss';
 function NavigationHeader() {
   return (
     <nav>
-      <Link className="home--go" to="/">
+      <Link className="logo" to="/">
         <img src={logo} alt="Logo TMDB" />
       </Link>
-      <Link className="favourites--go" to="/my-favourites">My Favourites</Link>
+      <div>
+        <Link className="navigate" to="/my-favourites">My Favourites</Link>
+        <Link className="navigate home" to="/">
+          <i className="fas fa-home" />
+        </Link>
+      </div>
     </nav>
   );
 }
