@@ -1,13 +1,13 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
-    jest: true
+    es2021: true
   },
   extends: [
     'plugin:react/recommended',
-    'airbnb'
+    'standard'
   ],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
       jsx: true
@@ -17,13 +17,13 @@ module.exports = {
   },
   plugins: [
     'react',
-    'jest'
+    '@typescript-eslint'
   ],
   rules: {
     'comma-dangle': [2, 'never'],
     'linebreak-style': 0,
     'global-require': 0,
     'eslint linebreak-style': [0, 'error', 'windows'],
-    'react/jsx-filename-extension': [1, { allow: 'as-needed' }]
+    'no-use-before-define': 'off'
   }
-};
+}

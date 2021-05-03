@@ -1,19 +1,19 @@
-import movieActionTypes from '../actions/movieActionTypes';
-import movieReducer from './moviesReducer';
-import mockedData from '../../constants/mockedData';
+import movieActionTypes from '../actions/movieActionTypes'
+import movieReducer from './moviesReducer'
+import mockedData from '../../constants/mockedData'
 
 let state = {
   allMovies: [],
   favourites: [],
   filteredMovies: []
-};
+}
 
 describe('Given a movieReducer', () => {
   describe('When it is called without action type', () => {
     it('It should return the state', () => {
-      expect(movieReducer(state, {})).toEqual(state);
-    });
-  });
+      expect(movieReducer(state, {})).toEqual(state)
+    })
+  })
 
   describe('When it is called with action LOAD_ALL_MOVIES', () => {
     it('It should return the updated state with an array of 2 movies', () => {
@@ -22,41 +22,41 @@ describe('Given a movieReducer', () => {
         data: {
           results: mockedData.movies
         }
-      };
-      const expectedReturnValue = { ...state, allMovies: action.data.results };
-      const returnValue = movieReducer(state, action);
-      expect(returnValue).toEqual(expectedReturnValue);
-      expect(returnValue.allMovies.length).toBe(2);
-    });
-  });
+      }
+      const expectedReturnValue = { ...state, allMovies: action.data.results }
+      const returnValue = movieReducer(state, action)
+      expect(returnValue).toEqual(expectedReturnValue)
+      expect(returnValue.allMovies.length).toBe(2)
+    })
+  })
 
   describe('When it is called with action LOAD_ALL_FAVOURITES', () => {
     it('It should return the updated state with an array of 1 favourite movie', () => {
       const action = {
         type: movieActionTypes.LOAD_ALL_FAVOURITES,
         data: mockedData.favourites
-      };
+      }
 
-      const expectedReturnValue = { ...state, favourites: action.data };
-      const returnValue = movieReducer(state, action);
-      expect(returnValue).toEqual(expectedReturnValue);
-      expect(returnValue.favourites.length).toBe(1);
-    });
-  });
+      const expectedReturnValue = { ...state, favourites: action.data }
+      const returnValue = movieReducer(state, action)
+      expect(returnValue).toEqual(expectedReturnValue)
+      expect(returnValue.favourites.length).toBe(1)
+    })
+  })
 
   describe('When it is called with action ADD_FAVOURITES', () => {
     it('It should return the updated state with an array of 1 favourite movie', () => {
       const action = {
         type: movieActionTypes.ADD_FAVOURITES,
         data: mockedData.favourites
-      };
+      }
 
-      const expectedReturnValue = { ...state, favourites: [...state.favourites, action.data] };
-      const returnValue = movieReducer(state, action);
-      expect(returnValue).toEqual(expectedReturnValue);
-      expect(returnValue.favourites.length).toBe(1);
-    });
-  });
+      const expectedReturnValue = { ...state, favourites: [...state.favourites, action.data] }
+      const returnValue = movieReducer(state, action)
+      expect(returnValue).toEqual(expectedReturnValue)
+      expect(returnValue.favourites.length).toBe(1)
+    })
+  })
 
   describe('When it is called with action DELETE_FAVOURITES and a matching id', () => {
     it('It should return the updated state with an array of 0 favourite movies', () => {
@@ -65,19 +65,19 @@ describe('Given a movieReducer', () => {
           allMovies: [],
           favourites: mockedData.favourites,
           filteredMovies: []
-        };
-      });
+        }
+      })
       const action = {
         type: movieActionTypes.DELETE_FAVOURITES,
         data: 615457
-      };
+      }
 
-      const expectedReturnValue = { ...state, favourites: [] };
-      const returnValue = movieReducer(state, action);
-      expect(returnValue).toEqual(expectedReturnValue);
-      expect(returnValue.favourites.length).toBe(0);
-    });
-  });
+      const expectedReturnValue = { ...state, favourites: [] }
+      const returnValue = movieReducer(state, action)
+      expect(returnValue).toEqual(expectedReturnValue)
+      expect(returnValue.favourites.length).toBe(0)
+    })
+  })
 
   describe('When it is called with action DELETE_FAVOURITES and NOT matching id', () => {
     it('It should return the updated state with an array of 1 favourite movies', () => {
@@ -86,19 +86,19 @@ describe('Given a movieReducer', () => {
           allMovies: [],
           favourites: mockedData.favourites,
           filteredMovies: []
-        };
-      });
+        }
+      })
       const action = {
         type: movieActionTypes.DELETE_FAVOURITES,
         data: 56565
-      };
+      }
 
-      const expectedReturnValue = { ...state };
-      const returnValue = movieReducer(state, action);
-      expect(returnValue).toEqual(expectedReturnValue);
-      expect(returnValue.favourites.length).toBe(1);
-    });
-  });
+      const expectedReturnValue = { ...state }
+      const returnValue = movieReducer(state, action)
+      expect(returnValue).toEqual(expectedReturnValue)
+      expect(returnValue.favourites.length).toBe(1)
+    })
+  })
 
   describe('When it is called with action UPDATE_FAVOURITES', () => {
     it('It should return the state with the updated data', () => {
@@ -107,8 +107,8 @@ describe('Given a movieReducer', () => {
           allMovies: [],
           favourites: mockedData.favourites,
           filteredMovies: []
-        };
-      });
+        }
+      })
       const action = {
         type: movieActionTypes.UPDATE_FAVOURITES,
         data: {
@@ -133,12 +133,12 @@ describe('Given a movieReducer', () => {
           media_type: 'movie',
           watched: false
         }
-      };
+      }
 
-      const expectedReturnValue = { ...state, favourites: [action.data] };
-      expect(movieReducer(state, action)).toEqual(expectedReturnValue);
-    });
-  });
+      const expectedReturnValue = { ...state, favourites: [action.data] }
+      expect(movieReducer(state, action)).toEqual(expectedReturnValue)
+    })
+  })
 
   describe('When it is called with action FILTER_FAVOURITES and data: watched', () => {
     it('It should return the state with the updated data, favourites length to be 0', () => {
@@ -147,17 +147,17 @@ describe('Given a movieReducer', () => {
           allMovies: [],
           favourites: mockedData.favourites,
           filteredMovies: []
-        };
-      });
+        }
+      })
       const action = {
         type: movieActionTypes.FILTER_FAVOURITES,
         data: 'watched'
-      };
+      }
 
-      const expectedReturnValue = { ...state, favourites: [] };
-      const returnValue = movieReducer(state, action);
-      expect(returnValue).toEqual(expectedReturnValue);
-      expect(returnValue.favourites.length).toBe(0);
-    });
-  });
-});
+      const expectedReturnValue = { ...state, favourites: [] }
+      const returnValue = movieReducer(state, action)
+      expect(returnValue).toEqual(expectedReturnValue)
+      expect(returnValue.favourites.length).toBe(0)
+    })
+  })
+})

@@ -71,6 +71,6 @@ const mockData = {
     }
 
   ]
-};
+}
 
-export default mockData;
+export default mockData

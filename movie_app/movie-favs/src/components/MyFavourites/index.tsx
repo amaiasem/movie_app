@@ -1,22 +1,23 @@
-import React, { useEffect } from 'react';
-import { connect } from 'react-redux';
-import { PropTypes } from 'prop-types';
-import { bindActionCreators } from 'redux';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import { Link } from 'react-router-dom'
 import {
   loadFavourites,
   deleteFavourites,
   updateFavourites,
   filterFavourites
-} from '../../redux/actions/movieActionCreators';
-import posterSize from '../../constants/posterURL';
-import NavigationHeader from '../NavigationHeader';
-import './index.scss';
+} from '../../redux/actions/movieActionCreators'
+import posterSize from '../../constants/posterURL'
+import NavigationHeader from '../NavigationHeader'
+import State from './../../Interfaces/stateInterface'
+import Movie from './../../Interfaces/movieInterface'
+import './index.scss'
 
-function MyFavourites({ favourites, action }) {
+function MyFavourites ({ favourites, action }: {favourites: Movie[], action: any}) {
   useEffect(() => {
-    action.loadFavourites();
-  }, []);
+    action.loadFavourites()
+  }, [])
 
   return (
     <div className="my-favourites__container">
@@ -74,7 +75,7 @@ function MyFavourites({ favourites, action }) {
                               Pending
                             </button>
                           </li>
-                        )
+                          )
                         : (
                           <li>
                             <button
@@ -84,13 +85,13 @@ function MyFavourites({ favourites, action }) {
                               Watched
                             </button>
                           </li>
-                        )
+                          )
                     }
                   </ul>
                 </div>
                 <Link to={{
                   pathname: '/movie-detail',
-                  props: movie
+                  state: movie
                 }}
                 >
                   <img src={`${posterSize.small}${movie.poster_path}`} alt={`Poster from ${movie.title}`} />
@@ -105,26 +106,16 @@ function MyFavourites({ favourites, action }) {
         }
       </div>
     </div>
-  );
+  )
 }
 
-MyFavourites.propTypes = {
-  favourites: PropTypes.shape([]).isRequired,
-  action: PropTypes.shape({
-    loadFavourites: PropTypes.func.isRequired,
-    deleteFavourites: PropTypes.func.isRequired,
-    updateFavourites: PropTypes.func.isRequired,
-    filterFavourites: PropTypes.func.isRequired
-  }).isRequired
-};
-
-function mapStateToProps({ movies }) {
+function mapStateToProps ({ movies }: {movies: State}) {
   return {
     favourites: movies.favourites
-  };
+  }
 }
 
-function mapDisptachToProps(dispatch) {
+function mapDisptachToProps (dispatch: any) {
   return {
     action: bindActionCreators({
       loadFavourites,
@@ -132,6 +123,6 @@ function mapDisptachToProps(dispatch) {
       updateFavourites,
       filterFavourites
     }, dispatch)
-  };
+  }
 }
-export default connect(mapStateToProps, mapDisptachToProps)(MyFavourites);
+export default connect(mapStateToProps, mapDisptachToProps)(MyFavourites)

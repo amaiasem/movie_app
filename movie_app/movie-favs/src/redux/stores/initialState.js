@@ -6,6 +6,6 @@ const initialState = {
     filteredMovies: []
   }
 
-};
+}
 
-export default initialState;
+export default initialState

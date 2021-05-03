@@ -1,18 +1,18 @@
-import './App.scss';
-import React from 'react';
-import { Provider } from 'react-redux';
+import React from 'react'
+import './App.scss'
+import { Provider } from 'react-redux'
 import {
   BrowserRouter,
   Link,
   Route,
   Switch
-} from 'react-router-dom';
-import MovieList from './components/MovieList';
-import MovieDetail from './components/MovieDetail';
-import MyFavourites from './components/MyFavourites';
-import store from './redux/stores/configureStore';
+} from 'react-router-dom'
+import MovieList from './components/MovieList'
+import MovieDetail from './components/MovieDetail'
+import MyFavourites from './components/MyFavourites'
+import store from './redux/stores/configureStore'
 
-function App() {
+function App () {
   return (
     <Provider store={store}>
       <BrowserRouter>
@@ -27,7 +27,7 @@ function App() {
         </Switch>
       </BrowserRouter>
     </Provider>
-  );
+  )
 }
 
-export default App;
+export default App

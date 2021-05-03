@@ -1,15 +1,16 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { PropTypes } from 'prop-types';
-import { bindActionCreators } from 'redux';
-import posterSize from '../../constants/posterURL';
-import NavigationHeader from '../NavigationHeader';
-import { addFavourites } from '../../redux/actions/movieActionCreators';
+import React from 'react'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import posterSize from '../../constants/posterURL'
+import NavigationHeader from '../NavigationHeader'
+import { addFavourites } from '../../redux/actions/movieActionCreators'
+import State from './../../Interfaces/stateInterface'
+import Location from './../../Interfaces/locationInterface'
 
-import './index.scss';
+import './index.scss'
 
-const MovieDetail = ({ location, action }) => {
-  const movie = location.props;
+const MovieDetail = ({ location, action }:{location: Location, action: any}) => {
+  const movie = location.state
   return (
     <div>
       <NavigationHeader />
@@ -48,36 +49,18 @@ const MovieDetail = ({ location, action }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-MovieDetail.propTypes = {
-  location: PropTypes.shape({
-    props: PropTypes.shape({
-      title: PropTypes.string,
-      name: PropTypes.string,
-      backdrop_path: PropTypes.string,
-      poster_path: PropTypes.string,
-      overview: PropTypes.string,
-      release_date: PropTypes.string,
-      media_type: PropTypes.string,
-      vote_average: PropTypes.string
-    }).isRequired
-  }).isRequired,
-  action: PropTypes.shape({
-    addFavourites: PropTypes.func.isRequired
-  }).isRequired
-};
-
-function mapStateToProps({ movies }) {
+function mapStateToProps ({ movies }: {movies: State}) {
   return {
     favourites: movies.favourites
-  };
+  }
 }
 
-function mapDisptachToProps(dispatch) {
+function mapDisptachToProps (dispatch: any) {
   return {
     action: bindActionCreators({ addFavourites }, dispatch)
-  };
+  }
 }
-export default connect(mapStateToProps, mapDisptachToProps)(MovieDetail);
+export default connect(mapStateToProps, mapDisptachToProps)(MovieDetail)
