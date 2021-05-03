@@ -11,15 +11,16 @@ loadAllmovies,
 } from './movieActionCreators'
 
 jest.mock('axios')
+const mockedAxios = axios as jest.Mocked<typeof axios>
 
 describe('Given a loadAllmovies function', () => {
   describe('When is invoked', () => {
     it('It should dispatch an action with type LOAD_ALL_MOVIES and the response data', async () => {
-      const response = {
+      const response: any = {
         data: []
       }
 
-      axios.get.mockReturnValueOnce(response)
+      mockedAxios.get.mockReturnValueOnce(response)
       const action = {
         type: movieActionTypes.LOAD_ALL_MOVIES,
         data: response.data
@@ -35,11 +36,11 @@ describe('Given a loadAllmovies function', () => {
 describe('Given a loadFavourites function', () => {
   describe('When is invoked', () => {
     it('It should dispatch an action LOAD_ALL_FAVOURITES and the response', async () => {
-      const response = {
+      const response: any = {
         data: []
       }
 
-      axios.get.mockReturnValueOnce(response)
+      mockedAxios.get.mockReturnValueOnce(response)
       const action = {
         type: movieActionTypes.LOAD_ALL_FAVOURITES,
         data: response.data
@@ -55,16 +56,16 @@ describe('Given a loadFavourites function', () => {
 describe('Given an addFavourites function', () => {
   describe('When is invoked with a movie', () => {
     it('It should dispatch an action ADD_FAVOURITES and the response', async () => {
-      const response = {
+      const response:any = {
         data: {}
       }
 
-      const query = {
+      const query: any = {
         id: 12,
         name: 'Avangers'
       }
 
-      axios.post.mockReturnValueOnce(response)
+      mockedAxios.post.mockReturnValueOnce(response)
       const action = {
         type: movieActionTypes.ADD_FAVOURITES,
         data: response.data
@@ -80,11 +81,14 @@ describe('Given an addFavourites function', () => {
 describe('Given a deleteFavourites function', () => {
   describe('When is invoked with a movie id', () => {
     it('It should dispatch an action DELETE_FAVOURITES and the query id', async () => {
-      const query = {
+      const query: any = {
         id: 12
       }
+      const response:any = {
+        data: {}
+      }
 
-      axios.delete.mockImplementationOnce()
+      mockedAxios.delete.mockReturnValueOnce(response)
       const action = {
         type: movieActionTypes.DELETE_FAVOURITES,
         data: query.id
@@ -100,16 +104,16 @@ describe('Given a deleteFavourites function', () => {
 describe('Given an updateFavourites function', () => {
   describe('When is invoked', () => {
     it('It should dispatch an action UPDATE_FAVOURITES and the data', async () => {
-      const query = {
+      const query:any = {
         id: 12,
         watched: false
       }
 
-      const response = {
+      const response:any = {
         data: {}
       }
 
-      axios.patch.mockReturnValueOnce(response)
+      mockedAxios.patch.mockReturnValueOnce(response)
       const action = {
         type: movieActionTypes.UPDATE_FAVOURITES,
         data: response.data
@@ -125,7 +129,7 @@ describe('Given an updateFavourites function', () => {
 describe('Given a filterFavourites function', () => {
   describe('When is invoked with a watched status', () => {
     it('It should return an action FILTER_FAVOURITES and the status', () => {
-      const query = {
+      const query:any = {
         watched: false
       }
       const returnValue = filterFavourites(query.watched)

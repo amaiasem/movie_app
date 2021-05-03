@@ -454,28 +454,6 @@
       "watched": false
     },
     {
-      "poster_path": "/6KErczPBROQty7QoIsaa6wJYXZi.jpg",
-      "video": false,
-      "vote_average": 7.3,
-      "overview": "Tom the cat and Jerry the mouse get kicked out of their home and relocate to a fancy New York hotel, where a scrappy employee named Kayla will lose her job if she can’t evict Jerry before a high-class wedding at the hotel. Her solution? Hiring Tom to get rid of the pesky mouse.",
-      "release_date": "2021-02-11",
-      "id": 587807,
-      "adult": false,
-      "backdrop_path": "/9ns9463dwOeo1CK1JU2wirL5Yi1.jpg",
-      "title": "Tom & Jerry",
-      "genre_ids": [
-        35,
-        10751,
-        16
-      ],
-      "vote_count": 1274,
-      "original_language": "en",
-      "original_title": "Tom & Jerry",
-      "popularity": 1050.532,
-      "media_type": "movie",
-      "watched": true
-    },
-    {
       "overview": "Cold War spy Greville Wynne and his Russian source try to put an end to the Cuban Missile Crisis.",
       "release_date": "2020-09-27",
       "title": "The Courier",
