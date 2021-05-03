@@ -1,9 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import logo from '../../constants/logo';
-import './index.scss';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import logo from '../../constants/logo'
+import './index.scss'
 
-function NavigationHeader() {
+function NavigationHeader () {
   return (
     <nav>
       <Link className="logo" to="/">
@@ -16,7 +16,7 @@ function NavigationHeader() {
         </Link>
       </div>
     </nav>
-  );
+  )
 }
 
-export default NavigationHeader;
+export default NavigationHeader
