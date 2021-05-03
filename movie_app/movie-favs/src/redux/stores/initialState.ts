@@ -1,6 +1,5 @@
 const initialState = {
   movies: {
-
     allMovies: [],
     favourites: [],
     filteredMovies: []

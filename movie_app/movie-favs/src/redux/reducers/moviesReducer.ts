@@ -1,7 +1,10 @@
 /* eslint-disable max-len */
 import movieActionTypes from '../actions/movieActionTypes'
+import Movie from './../../Interfaces/movieInterface'
+import { AnyAction } from 'redux'
+import initialState from './../stores/initialState'
 
-export default function moviesReducer (state = {}, action) {
+export default function moviesReducer (state = initialState.movies, action: AnyAction) {
   switch (action.type) {
     case movieActionTypes.LOAD_ALL_MOVIES:
       return { ...state, allMovies: action.data.results }
@@ -12,17 +15,17 @@ export default function moviesReducer (state = {}, action) {
     case movieActionTypes.DELETE_FAVOURITES:
       return {
         ...state,
-        favourites: state.favourites.filter((movie) => movie.id !== action.data)
+        favourites: state.favourites.filter((movie: Movie) => movie.id !== action.data)
       }
     case movieActionTypes.UPDATE_FAVOURITES:
       return {
         ...state,
-        favourites: state.favourites.map((movie) => ((movie.id === action.data.id) ? action.data : movie))
+        favourites: state.favourites.map((movie: Movie) => ((movie.id === action.data.id) ? action.data : movie))
       }
     case movieActionTypes.FILTER_FAVOURITES:
       return {
         ...state,
-        favourites: state.favourites.filter((movie) => (movie.watched === action.data))
+        favourites: state.favourites.filter((movie: Movie) => (movie.watched === action.data))
       }
     default:
       return state

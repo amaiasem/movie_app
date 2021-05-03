@@ -5,13 +5,12 @@ import rootReducer from '../reducers/index'
 import initialState from './initialState'
 
 function configureStore () {
-  const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
-
   return createStore(
     rootReducer,
     initialState,
-    composeEnhancers(applyMiddleware(reduxInmutableStateInvariant(), thunkMiddleware))
+    compose(applyMiddleware(reduxInmutableStateInvariant(), thunkMiddleware))
   )
 }
-
+const store = configureStore()
+export type AppDispatch = typeof store.dispatch
 export default configureStore()
