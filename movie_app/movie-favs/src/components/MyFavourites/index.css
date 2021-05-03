@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap");
+.my-favourites__container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #032541;
+}
+
+.my-favourites__container h2 {
+  margin-top: 100px;
+  margin-left: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.my-favourites__container .favourites__filter {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.my-favourites__container .favourites__filter button {
+  all: unset;
+  cursor: pointer;
+  margin-right: 5px;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  background: #66c6b4;
+  background: -webkit-gradient(linear, left top, right top, from(#66c6b4), color-stop(61%, #08b4e1));
+  background: linear-gradient(90deg, #66c6b4 0%, #08b4e1 61%);
+}
+
+.my-favourites__container .favourites__filter button:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #66c6b4;
+  background: -webkit-gradient(linear, left top, right top, color-stop(80%, #66c6b4), to(#08b4e1));
+  background: linear-gradient(90deg, #66c6b4 80%, #08b4e1 100%);
+}
+
+.my-favourites__container .favourites__list {
+  padding: 20px;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.my-favourites__container .favourites__list .movie__card {
+  margin: 5px;
+  padding: 5px;
+  width: 160px;
+  height: 270px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.644);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.644);
+  position: relative;
+}
+
+.my-favourites__container .favourites__list .movie__card div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+
+.my-favourites__container .favourites__list .movie__card div h4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 150px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.my-favourites__container .favourites__list .movie__card div .movie__menu {
+  all: unset;
+  cursor: pointer;
+  width: 50px;
+  text-align: end;
+}
+
+.my-favourites__container .favourites__list .movie__card div .movie__menu:hover + .movie__dropdown {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.my-favourites__container .favourites__list .movie__card div .movie__dropdown {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  z-index: 1;
+  width: 100px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.my-favourites__container .favourites__list .movie__card div .movie__dropdown:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.my-favourites__container .favourites__list .movie__card div .movie__dropdown li {
+  width: 100%;
+}
+
+.my-favourites__container .favourites__list .movie__card div .movie__dropdown li button {
+  all: unset;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  width: 100%;
+  padding: 5px;
+}
+
+.my-favourites__container .favourites__list .movie__card div .movie__dropdown li button:hover {
+  color: #fff;
+  background-color: #032541;
+}
+
+.my-favourites__container .favourites__list .movie__card img {
+  width: 150px;
+  height: 220px;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.my-favourites__container .favourites__list .movie__card .watched,
+.my-favourites__container .favourites__list .movie__card .pending {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.my-favourites__container .favourites__list .movie__card .watched {
+  color: #26c286;
+}
+
+.my-favourites__container .favourites__list .movie__card .pending {
+  color: #f5593a;
+}
+/*# sourceMappingURL=index.css.map */

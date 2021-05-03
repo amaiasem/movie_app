@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap");
+nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100vw;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 10px;
+  background-color: #032541;
+  color: #fff;
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.418);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.418);
+}
+
+nav .logo {
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+nav .logo img {
+  width: 150px;
+}
+
+nav div {
+  margin-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav div .navigate {
+  all: unset;
+  margin-right: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+nav div .navigate:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #9be2f4;
+}
+
+nav div .home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+/*# sourceMappingURL=index.css.map */
