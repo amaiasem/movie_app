@@ -21,7 +21,6 @@ describe('Given a component NavigationHeader', () => {
   describe('When is rendered', () => {
     it('It should display a Link My Favourites', () => {
       act(() => {
-        // eslint-disable-next-line react/jsx-filename-extension
         render(<NavigationHeader />, container);
       });
 

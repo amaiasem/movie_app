@@ -473,27 +473,6 @@
       "original_title": "Tom & Jerry",
       "popularity": 1050.532,
       "media_type": "movie",
-      "watched": false
-    },
-    {
-      "original_language": "en",
-      "original_title": "Nomadland",
-      "poster_path": "/66GUmWpTHgAjyp4aBSXy63PZTiC.jpg",
-      "video": false,
-      "vote_average": 7.4,
-      "id": 581734,
-      "release_date": "2021-01-29",
-      "vote_count": 760,
-      "title": "Nomadland",
-      "adult": false,
-      "backdrop_path": "/bjjZXrP8PEdFeJkKERc62xlarMI.jpg",
-      "overview": "A woman in her sixties embarks on a journey through the western United States after losing everything in the Great Recession, living as a van-dwelling modern-day nomad.",
-      "genre_ids": [
-        18,
-        37
-      ],
-      "popularity": 397.321,
-      "media_type": "movie",
       "watched": true
     },
     {
