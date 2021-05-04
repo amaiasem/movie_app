@@ -17,13 +17,15 @@ describe('Given a loadAllmovies function', () => {
   describe('When is invoked', () => {
     it('It should dispatch an action with type LOAD_ALL_MOVIES and the response data', async () => {
       const response: any = {
-        data: []
+        data: {
+          results: []
+        }
       }
 
       mockedAxios.get.mockReturnValueOnce(response)
       const action = {
         type: movieActionTypes.LOAD_ALL_MOVIES,
-        data: response.data
+        data: response.data.results
       }
       const dispatch = jest.fn()
       const fnc = loadAllmovies()

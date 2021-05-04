@@ -1,13 +1,18 @@
-/* eslint-disable max-len */
 import movieActionTypes from '../actions/movieActionTypes'
 import Movie from './../../Interfaces/movieInterface'
 import { AnyAction } from 'redux'
 import initialState from './../stores/initialState'
 
-export default function moviesReducer (state = initialState.movies, action: AnyAction) {
+export interface movieState {
+  allMovies: Movie[],
+  favourites: Movie[],
+  filteredMovies: Movie[]
+}
+
+export default function moviesReducer (state = initialState.movies, action: AnyAction): movieState {
   switch (action.type) {
     case movieActionTypes.LOAD_ALL_MOVIES:
-      return { ...state, allMovies: action.data.results }
+      return { ...state, allMovies: action.data }
     case movieActionTypes.LOAD_ALL_FAVOURITES:
       return { ...state, favourites: action.data }
     case movieActionTypes.ADD_FAVOURITES:

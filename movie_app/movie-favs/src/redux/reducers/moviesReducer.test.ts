@@ -2,7 +2,7 @@ import movieActionTypes from '../actions/movieActionTypes'
 import movieReducer from './moviesReducer'
 import mockedData from '../../constants/mockedData'
 
-let state = {
+let state: any = {
   allMovies: [],
   favourites: [],
   filteredMovies: []
@@ -11,7 +11,7 @@ let state = {
 describe('Given a movieReducer', () => {
   describe('When it is called without action type', () => {
     it('It should return the state', () => {
-      expect(movieReducer(state, {})).toEqual(state)
+      expect(movieReducer(undefined, { type: null })).toEqual(state)
     })
   })
 
@@ -19,11 +19,10 @@ describe('Given a movieReducer', () => {
     it('It should return the updated state with an array of 2 movies', () => {
       const action = {
         type: movieActionTypes.LOAD_ALL_MOVIES,
-        data: {
-          results: mockedData.movies
-        }
+        data: mockedData.movies
       }
-      const expectedReturnValue = { ...state, allMovies: action.data.results }
+
+      const expectedReturnValue = { ...state, allMovies: action.data }
       const returnValue = movieReducer(state, action)
       expect(returnValue).toEqual(expectedReturnValue)
       expect(returnValue.allMovies.length).toBe(2)
