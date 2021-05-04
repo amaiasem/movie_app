@@ -1,7 +1,9 @@
+import Movie from './movieInterface'
+
 export default interface State {
 
-    allMovies: [],
-    favourites: [],
-    filteredMovies: []
+    allMovies: Movie[],
+    favourites: Movie[],
+    filteredMovies: Movie[]
 
 }

@@ -451,7 +451,7 @@
       ],
       "popularity": 2516.939,
       "media_type": "movie",
-      "watched": false
+      "watched": true
     },
     {
       "overview": "Cold War spy Greville Wynne and his Russian source try to put an end to the Cuban Missile Crisis.",
@@ -495,28 +495,73 @@
       ],
       "popularity": 2176.988,
       "media_type": "movie",
+      "watched": true
+    },
+    {
+      "overview": "Seven years since the Monsterpocalypse began, Joel Dawson has been living underground in order to survive. But after reconnecting over radio with his high school girlfriend Aimee, Joel decides to venture out to reunite with her, despite all the dangerous monsters that stand in his way.",
+      "release_date": "2020-10-16",
+      "adult": false,
+      "backdrop_path": "/lA5fOBqTOQBQ1s9lEYYPmNXoYLi.jpg",
+      "vote_count": 1797,
+      "genre_ids": [
+        35,
+        28,
+        12,
+        14
+      ],
+      "original_title": "Love and Monsters",
+      "original_language": "en",
+      "id": 590223,
+      "poster_path": "/r4Lm1XKP0VsTgHX4LG4syAwYA2I.jpg",
+      "title": "Love and Monsters",
+      "video": false,
+      "vote_average": 7.4,
+      "popularity": 155.925,
+      "media_type": "movie",
       "watched": false
     },
     {
-      "origin_country": [
-        "US"
-      ],
-      "overview": "In a world cleaved in two by a massive barrier of perpetual darkness, a young soldier uncovers a power that might finally unite her country. But as she struggles to hone her power, dangerous forces plot against her. Thugs, thieves, assassins and saints are at war now, and it will take more than magic to survive.",
-      "vote_count": 215,
-      "backdrop_path": "/8z9qQkx7wA6FXpLV8Tiw9mfsRFK.jpg",
-      "vote_average": 8.4,
+      "video": false,
+      "vote_average": 6.2,
+      "overview": "A three-person crew on a mission to Mars faces an impossible choice when an unplanned passenger jeopardizes the lives of everyone on board.",
+      "release_date": "2021-04-22",
+      "vote_count": 375,
+      "adult": false,
+      "backdrop_path": "/lLUTG4e3asScennW3qryoXjG48Q.jpg",
+      "title": "Stowaway",
       "genre_ids": [
-        10765
+        18,
+        878,
+        53
       ],
-      "name": "Shadow and Bone",
-      "id": 85720,
-      "first_air_date": "2021-04-23",
-      "poster_path": "/mrVoyDFiDSqfH4mkoRtccOv2vwh.jpg",
+      "id": 559581,
       "original_language": "en",
-      "original_name": "Shadow and Bone",
-      "popularity": 278.907,
-      "media_type": "tv",
+      "original_title": "Stowaway",
+      "poster_path": "/yOscLK7KzEPDdi1P8RmevGIjOSp.jpg",
+      "popularity": 646.102,
+      "media_type": "movie",
       "watched": true
+    },
+    {
+      "video": false,
+      "vote_average": 7.4,
+      "overview": "A woman in her sixties embarks on a journey through the western United States after losing everything in the Great Recession, living as a van-dwelling modern-day nomad.",
+      "release_date": "2021-01-29",
+      "vote_count": 824,
+      "adult": false,
+      "backdrop_path": "/bjjZXrP8PEdFeJkKERc62xlarMI.jpg",
+      "title": "Nomadland",
+      "genre_ids": [
+        18,
+        37
+      ],
+      "id": 581734,
+      "original_language": "en",
+      "original_title": "Nomadland",
+      "poster_path": "/66GUmWpTHgAjyp4aBSXy63PZTiC.jpg",
+      "popularity": 368.018,
+      "media_type": "movie",
+      "watched": false
     }
   ]
 }
