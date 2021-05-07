@@ -451,7 +451,7 @@
       ],
       "popularity": 2516.939,
       "media_type": "movie",
-      "watched": true
+      "watched": false
     },
     {
       "overview": "Cold War spy Greville Wynne and his Russian source try to put an end to the Cuban Missile Crisis.",
@@ -495,29 +495,6 @@
       ],
       "popularity": 2176.988,
       "media_type": "movie",
-      "watched": true
-    },
-    {
-      "overview": "Seven years since the Monsterpocalypse began, Joel Dawson has been living underground in order to survive. But after reconnecting over radio with his high school girlfriend Aimee, Joel decides to venture out to reunite with her, despite all the dangerous monsters that stand in his way.",
-      "release_date": "2020-10-16",
-      "adult": false,
-      "backdrop_path": "/lA5fOBqTOQBQ1s9lEYYPmNXoYLi.jpg",
-      "vote_count": 1797,
-      "genre_ids": [
-        35,
-        28,
-        12,
-        14
-      ],
-      "original_title": "Love and Monsters",
-      "original_language": "en",
-      "id": 590223,
-      "poster_path": "/r4Lm1XKP0VsTgHX4LG4syAwYA2I.jpg",
-      "title": "Love and Monsters",
-      "video": false,
-      "vote_average": 7.4,
-      "popularity": 155.925,
-      "media_type": "movie",
       "watched": false
     },
     {
@@ -540,28 +517,32 @@
       "poster_path": "/yOscLK7KzEPDdi1P8RmevGIjOSp.jpg",
       "popularity": 646.102,
       "media_type": "movie",
-      "watched": true
+      "watched": false
     },
     {
-      "video": false,
-      "vote_average": 7.4,
-      "overview": "A woman in her sixties embarks on a journey through the western United States after losing everything in the Great Recession, living as a van-dwelling modern-day nomad.",
-      "release_date": "2021-01-29",
-      "vote_count": 824,
-      "adult": false,
-      "backdrop_path": "/bjjZXrP8PEdFeJkKERc62xlarMI.jpg",
-      "title": "Nomadland",
-      "genre_ids": [
-        18,
-        37
-      ],
-      "id": 581734,
       "original_language": "en",
-      "original_title": "Nomadland",
-      "poster_path": "/66GUmWpTHgAjyp4aBSXy63PZTiC.jpg",
-      "popularity": 368.018,
+      "original_title": "The Mitchells vs. The Machines",
+      "poster_path": "/1RjkFdP1pQrqQ3DYKuxR9JnQ5JO.jpg",
+      "video": false,
+      "vote_average": 8.1,
+      "id": 501929,
+      "release_date": "2021-04-22",
+      "vote_count": 220,
+      "title": "The Mitchells vs. The Machines",
+      "adult": false,
+      "backdrop_path": "/5g0gisu56NsCGiMa00HWINbc25X.jpg",
+      "overview": "A quirky, dysfunctional family's road trip is upended when they find themselves in the middle of the robot apocalypse and suddenly become humanity's unlikeliest last hope.",
+      "genre_ids": [
+        16,
+        12,
+        35,
+        10751,
+        878,
+        28
+      ],
+      "popularity": 169.011,
       "media_type": "movie",
-      "watched": false
+      "watched": true
     }
   ]
 }

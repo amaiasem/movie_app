@@ -1,11 +1,9 @@
 {
   "name": "movie-favs",
-  "jest": {
-    "verbose": true
-  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/core": "^7.14.0",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.1.10",
@@ -13,7 +11,6 @@
     "axios": "^0.21.1",
     "eslint-plugin-jest": "^24.3.6",
     "is-svg": "^4.3.1",
-    "jest": "^26.6.3",
     "json-server": "^0.16.3",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
@@ -56,6 +53,8 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.13.15",
+    "@babel/preset-env": "^7.14.1",
     "@types/react-dom": "^17.0.3",
     "@types/react-router-dom": "^5.1.7",
     "@types/redux-immutable-state-invariant": "^2.1.1",
