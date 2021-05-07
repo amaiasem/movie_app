@@ -451,7 +451,7 @@
       ],
       "popularity": 2516.939,
       "media_type": "movie",
-      "watched": true
+      "watched": false
     },
     {
       "overview": "Cold War spy Greville Wynne and his Russian source try to put an end to the Cuban Missile Crisis.",
@@ -517,7 +517,7 @@
       "poster_path": "/yOscLK7KzEPDdi1P8RmevGIjOSp.jpg",
       "popularity": 646.102,
       "media_type": "movie",
-      "watched": true
+      "watched": false
     },
     {
       "original_language": "en",
@@ -542,7 +542,7 @@
       ],
       "popularity": 169.011,
       "media_type": "movie",
-      "watched": false
+      "watched": true
     }
   ]
 }
