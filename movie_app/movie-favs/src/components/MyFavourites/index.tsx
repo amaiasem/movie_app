@@ -10,9 +10,10 @@ import {
 import posterSize from '../../constants/posterURL'
 import NavigationHeader from '../NavigationHeader'
 import Movie from './../../Interfaces/movieInterface'
+import { AppDispatch } from './../../redux/stores/configureStore'
 import './index.scss'
 
-function MyFavourites ({ dispatch, favourites }: {dispatch: any, favourites: Movie[]}) {
+function MyFavourites ({ dispatch, favourites }: {dispatch: AppDispatch, favourites: Movie[]}) {
   useEffect(() => {
     dispatch(loadFavourites())
   }, [])

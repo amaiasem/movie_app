@@ -5,9 +5,11 @@ import loadMovies from '../../redux/actions/movieActionCreators'
 import posterSize from '../../constants/posterURL'
 import NavigationHeader from '../NavigationHeader'
 import Movie from './../../Interfaces/movieInterface'
+import { AppDispatch } from './../../redux/stores/configureStore'
+
 import './index.scss'
 
-function MovieList ({ dispatch, movies }: {dispatch: any, movies: Movie[]}) {
+function MovieList ({ dispatch, movies }: {dispatch: AppDispatch, movies: Movie[]}) {
   useEffect(() => {
     dispatch(loadMovies())
   }, [])
