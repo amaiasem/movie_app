@@ -5,10 +5,11 @@ import NavigationHeader from '../NavigationHeader'
 import { addFavourites } from '../../redux/actions/movieActionCreators'
 import Location from './../../Interfaces/locationInterface'
 import Movie from './../../Interfaces/movieInterface'
+import { AppDispatch } from './../../redux/stores/configureStore'
 
 import './index.scss'
 
-const MovieDetail = ({ dispatch, location }:{dispatch: any, location: Location}) => {
+const MovieDetail = ({ dispatch, location }:{dispatch: AppDispatch, location: Location}) => {
   const movie = location.state
   return (
     <div>
