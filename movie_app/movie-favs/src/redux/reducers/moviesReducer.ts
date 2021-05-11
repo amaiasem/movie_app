@@ -3,7 +3,7 @@ import Movie from './../../Interfaces/movieInterface'
 import { AnyAction } from 'redux'
 import initialState from './../stores/initialState'
 
-export default function moviesReducer (state = initialState.movies, action: AnyAction) {
+export default function moviesReducer (state = initialState, action: AnyAction) {
   switch (action.type) {
     case movieActionTypes.LOAD_ALL_MOVIES:
       return { ...state, allMovies: action.data }

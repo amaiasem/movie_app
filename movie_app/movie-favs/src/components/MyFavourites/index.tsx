@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
 import { Link } from 'react-router-dom'
 import {
   loadFavourites,
@@ -10,13 +9,12 @@ import {
 } from '../../redux/actions/movieActionCreators'
 import posterSize from '../../constants/posterURL'
 import NavigationHeader from '../NavigationHeader'
-import State from './../../Interfaces/stateInterface'
 import Movie from './../../Interfaces/movieInterface'
 import './index.scss'
 
-function MyFavourites ({ favourites, action }: {favourites: Movie[], action: any}) {
+function MyFavourites ({ dispatch, favourites }: {dispatch: any, favourites: Movie[]}) {
   useEffect(() => {
-    action.loadFavourites()
+    dispatch(loadFavourites())
   }, [])
 
   return (
@@ -26,13 +24,13 @@ function MyFavourites ({ favourites, action }: {favourites: Movie[], action: any
       <div className="favourites__filter">
         <button
           type="button"
-          onClick={() => action.loadFavourites()}
+          onClick={() => dispatch(loadFavourites())}
         >
           All
         </button>
         <button
           type="button"
-          onClick={() => action.filterFavourites(false)}
+          onClick={() => dispatch(filterFavourites(false))}
         >
           Pending
 
@@ -59,7 +57,7 @@ function MyFavourites ({ favourites, action }: {favourites: Movie[], action: any
                     <li>
                       <button
                         type="button"
-                        onClick={() => action.deleteFavourites(movie.id)}
+                        onClick={() => dispatch(deleteFavourites(movie.id))}
                       >
                         Delete
                       </button>
@@ -70,7 +68,7 @@ function MyFavourites ({ favourites, action }: {favourites: Movie[], action: any
                           <li>
                             <button
                               type="button"
-                              onClick={() => action.updateFavourites(movie.id, movie.watched)}
+                              onClick={() => dispatch(updateFavourites(movie.id, movie.watched))}
                             >
                               Pending
                             </button>
@@ -80,7 +78,7 @@ function MyFavourites ({ favourites, action }: {favourites: Movie[], action: any
                           <li>
                             <button
                               type="button"
-                              onClick={() => action.updateFavourites(movie.id, movie.watched)}
+                              onClick={() => dispatch(updateFavourites(movie.id, movie.watched))}
                             >
                               Watched
                             </button>
@@ -109,20 +107,10 @@ function MyFavourites ({ favourites, action }: {favourites: Movie[], action: any
   )
 }
 
-function mapStateToProps ({ movies }: {movies: State}) {
+function mapStateToProps ({ movies: { favourites } }: any) {
   return {
-    favourites: movies.favourites
+    favourites
   }
 }
 
-function mapDisptachToProps (dispatch: any) {
-  return {
-    action: bindActionCreators({
-      loadFavourites,
-      deleteFavourites,
-      updateFavourites,
-      filterFavourites
-    }, dispatch)
-  }
-}
-export default connect(mapStateToProps, mapDisptachToProps)(MyFavourites)
+export default connect(mapStateToProps)(MyFavourites)

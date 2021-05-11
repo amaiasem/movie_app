@@ -31,7 +31,6 @@
     "build": "react-scripts build",
     "test": "jest --watchAll --collect-coverage",
     "eject": "react-scripts eject",
-    "flow": "flow",
     "json:server": "json-server --watch db.json"
   },
   "eslintConfig": {

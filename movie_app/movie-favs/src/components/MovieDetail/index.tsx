@@ -1,15 +1,14 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
 import posterSize from '../../constants/posterURL'
 import NavigationHeader from '../NavigationHeader'
 import { addFavourites } from '../../redux/actions/movieActionCreators'
-import State from './../../Interfaces/stateInterface'
 import Location from './../../Interfaces/locationInterface'
+import Movie from './../../Interfaces/movieInterface'
 
 import './index.scss'
 
-const MovieDetail = ({ location, action }:{location: Location, action: any}) => {
+const MovieDetail = ({ dispatch, location }:{dispatch: any, location: Location}) => {
   const movie = location.state
   return (
     <div>
@@ -28,7 +27,7 @@ const MovieDetail = ({ location, action }:{location: Location, action: any}) => 
             <button
               className="favourites--add"
               type="button"
-              onClick={() => action.addFavourites(movie)}
+              onClick={() => dispatch(addFavourites(movie))}
             >
               <i className="far fa-heart" />
             </button>
@@ -52,15 +51,10 @@ const MovieDetail = ({ location, action }:{location: Location, action: any}) => 
   )
 }
 
-function mapStateToProps ({ movies }: {movies: State}) {
+function mapStateToProps ({ favourites }: {favourites: Movie[]}) {
   return {
-    favourites: movies.favourites
+    favourites
   }
 }
 
-function mapDisptachToProps (dispatch: any) {
-  return {
-    action: bindActionCreators({ addFavourites }, dispatch)
-  }
-}
-export default connect(mapStateToProps, mapDisptachToProps)(MovieDetail)
+export default connect(mapStateToProps)(MovieDetail)
