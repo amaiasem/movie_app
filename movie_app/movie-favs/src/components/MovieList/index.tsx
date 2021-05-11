@@ -1,17 +1,15 @@
 import React, { useEffect } from 'react'
-import { bindActionCreators } from 'redux'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import loadMovies from '../../redux/actions/movieActionCreators'
 import posterSize from '../../constants/posterURL'
 import NavigationHeader from '../NavigationHeader'
-import State from './../../Interfaces/stateInterface'
 import Movie from './../../Interfaces/movieInterface'
 import './index.scss'
 
-function MovieList ({ movies, action }: {movies: Movie[], action: any}) {
+function MovieList ({ dispatch, movies }: {dispatch: any, movies: Movie[]}) {
   useEffect(() => {
-    action.loadMovies()
+    dispatch(loadMovies())
   }, [])
 
   return (
@@ -20,7 +18,7 @@ function MovieList ({ movies, action }: {movies: Movie[], action: any}) {
       <h2>Trending this week</h2>
       <div className="container__list">
         {
-        movies && movies.map((movie) => (
+        movies && movies.map((movie: Movie) => (
           <Link
             key={movie.id}
             to={{
@@ -53,16 +51,10 @@ function MovieList ({ movies, action }: {movies: Movie[], action: any}) {
   )
 }
 
-function mapStateToProps ({ movies }: {movies: State}) {
+function mapStateToProps ({ movies: { allMovies } }: any) {
   return {
-    movies: movies.allMovies
+    movies: allMovies
   }
 }
 
-function mapDispatchToProps (dispatch: any) {
-  return {
-    action: bindActionCreators({ loadMovies }, dispatch)
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(MovieList)
+export default connect(mapStateToProps)(MovieList)

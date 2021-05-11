@@ -10,7 +10,9 @@ import {
 import MovieList from './components/MovieList'
 import MovieDetail from './components/MovieDetail'
 import MyFavourites from './components/MyFavourites'
-import store from './redux/stores/configureStore'
+import configureStore from './redux/stores/configureStore'
+
+const store = configureStore({})
 
 function App () {
   return (

@@ -543,6 +543,51 @@
       "popularity": 169.011,
       "media_type": "movie",
       "watched": true
+    },
+    {
+      "genre_ids": [
+        53,
+        28,
+        80
+      ],
+      "overview": "A lonesome stranger with nerves of steel must track down and kill a rogue hitman to satisfy an outstanding debt. But the only information he's been given is a time and location where to find his quarry. No name. No description. Nothing.",
+      "original_title": "The Virtuoso",
+      "poster_path": "/vXHzO26mJaOt4VO7ZFiM6No5ScT.jpg",
+      "video": false,
+      "vote_average": 6.8,
+      "id": 808023,
+      "vote_count": 23,
+      "release_date": "2021-04-30",
+      "title": "The Virtuoso",
+      "adult": false,
+      "backdrop_path": "/3Ef8PWUiP1ehO1ESEroxb736srR.jpg",
+      "original_language": "en",
+      "popularity": 81.779,
+      "media_type": "movie",
+      "watched": false
+    },
+    {
+      "original_language": "en",
+      "poster_path": "/9yxep7oJdkj3Pla9TD9gKflRApY.jpg",
+      "vote_count": 83,
+      "overview": "When the world's first generation of superheroes received their powers in the 1930s become the revered elder guard in the present, their superpowered children struggle to live up to the legendary feats of their parents.",
+      "id": 93484,
+      "vote_average": 7.6,
+      "first_air_date": "2021-05-07",
+      "name": "Jupiter's Legacy",
+      "backdrop_path": "/4YKkS95v9o9c0tBVA46xIn6M1tx.jpg",
+      "original_name": "Jupiter's Legacy",
+      "origin_country": [
+        "US"
+      ],
+      "genre_ids": [
+        10765,
+        10759,
+        18
+      ],
+      "popularity": 192.791,
+      "media_type": "tv",
+      "watched": false
     }
   ]
 }
